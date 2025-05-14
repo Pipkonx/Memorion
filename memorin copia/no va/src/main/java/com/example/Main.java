@@ -1,7 +1,7 @@
 package com.example;
 
-import com.example.Controlador.*;
-import com.example.vistas.*;
+import com.example.vistas.MainPanel;
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -18,6 +18,11 @@ public class Main extends Application {
     public void start(Stage stage) {
         primaryStage = stage;
         scene = new Scene(new MainPanel(), 640, 480);
+        
+        // Cargar el archivo CSS
+        String css = getClass().getResource("/style.css").toExternalForm();
+        scene.getStylesheets().add(css);
+        
         stage.setTitle("Memorión");
         stage.setScene(scene);
         stage.show();

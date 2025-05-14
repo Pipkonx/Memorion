@@ -31,3 +31,10 @@
     -fx-border-width: 2;
     -fx-border-radius: 10;
 }
+
+.carta {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #333333;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
